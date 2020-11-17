@@ -1,0 +1,19 @@
+{
+  "name": "html_css_web",
+  "version": "1.0.0",
+  "description": "Basic html and css website template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Terhaug/HTML-CSS-Web-Template.git"
+  },
+  "author": "Terje Haugum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Terhaug/HTML-CSS-Web-Template/issues"
+  },
+  "homepage": "https://github.com/Terhaug/HTML-CSS-Web-Template#readme"
+}
