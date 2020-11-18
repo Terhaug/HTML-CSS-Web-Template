@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Change href with the style u want to test -->
+    <link rel="stylesheet" type="text/css" href="public/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="public/styles/sal.css" />
+    <title>Responsive Website Design</title>
+  </head>
+  <body>
+    <!-- Container-checking for container.css: -->
+
+    <!-- <div class ="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div> -->
+
+    <!-- Container with different boxes, style with calc-function-->
+
+    <!-- <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div> -->
+
+    <div class="wrapper">
+      <!-- header -->
+      <header>
+        <a href="#" class="logo">Family name</a>
+        <div class="toggle" onclick="toggleClassName();"></div>
+      </header>
+
+      <!-- sidebar -->
+      <div class="sidebar">
+        <ul>
+          <li><a href="#home" onclick="toggleClassName();">Home</a></li>
+          <li><a href="#about" onclick="toggleClassName();">About</a></li>
+          <li>
+            <a href="#members" onclick="toggleClassName();">Family members</a>
+          </li>
+          <li>
+            <a href="#arrangements" onclick="toggleClassName();"
+              >Arrangements</a
+            >
+          </li>
+          <li><a href="#pictures" onclick="toggleClassName();">Pictures</a></li>
+          <li><a href="#posts" onclick="toggleClassName();">Posts</a></li>
+          <li><a href="#contact" onclick="toggleClassName();">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- banner -->
+      <div class="banner" id="home">
+        <img src="public/images/family.jpg" />
+        <div class="content" data-sal="slide-left" data-sal-duration="500">
+          <h2>Example Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+            porttitor mauris. Praesent volutpat sagittis ante, vel interdum
+            metus sollicitudin id. Sed pulvinar tellus nec lobortis euismod.
+            Nullam posuere consequat tellus, at posuere odio aliquet in.
+            Maecenas eu tincidunt dui, at varius mi. Phasellus sagittis
+            condimentum urna eu egestas. Ut ac justo lacus. Suspendisse sed quam
+            nec odio iaculis ullamcorper at ac velit. Praesent ultricies blandit
+            magna at sodales.
+          </p>
+        </div>
+      </div>
+
+      <!-- about -->
+      <section class="about" id="about">
+        <div class="contentBx" data-sal="slide-right" data-sal-duration="500">
+          <h2 class="heading">About Us</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+            porttitor mauris. Praesent volutpat sagittis ante, vel interdum
+            metus sollicitudin id. Sed pulvinar tellus nec lobortis euismod.
+            Nullam posuere consequat tellus, at posuere odio aliquet in.<br /><br />
+            Maecenas eu tincidunt dui, at varius mi. Phasellus sagittis
+            condimentum urna eu egestas. Ut ac justo lacus. Suspendisse sed quam
+            nec odio iaculis ullamcorper at ac velit. Praesent ultricies blandit
+            magna at sodales.
+          </p>
+        </div>
+        <div class="imgBx" data-sal="slide-left" data-sal-duration="500"></div>
+      </section>
+
+      <!-- Family members -->
+      <section class="family" id="members">
+        <h2 class="heading" data-sal="slide-left" data-sal-duration="500">Our family</h2>
+        <p class="text" data-sal="slide-left" data-sal-duration="500">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+          porttitor mauris. Praesent volutpat sagittis ante, vel interdum metus
+          sollicitudin id. Sed pulvinar tellus nec lobortis euismod. Nullam
+          posuere consequat tellus, at posuere odio aliquet in
+        </p>
+        <div class="container">
+          <div class="familyBx">
+            <div class="box">
+              <div class="imgBx">
+                <img src="public/images/member1.jpg" />
+              </div>
+              <div class="content">
+                <h2>Name of familymember <br /><span>Title</span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="familyBx">
+            <div class="box">
+              <div class="imgBx">
+                <img src="public/images/member1.jpg" />
+              </div>
+              <div class="content">
+                <h2>Name of familymember <br /><span>Title</span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="familyBx">
+            <div class="box">
+              <div class="imgBx">
+                <img src="public/images/member1.jpg" />
+              </div>
+              <div class="content">
+                <h2>Name of familymember <br /><span>Title</span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="familyBx">
+            <div class="box">
+              <div class="imgBx">
+                <img src="public/images/member1.jpg" />
+              </div>
+              <div class="content">
+                <h2>Name of familymember <br /><span>Title</span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="familyBx">
+            <div class="box">
+              <div class="imgBx">
+                <img src="public/images/member1.jpg" />
+              </div>
+              <div class="content">
+                <h2>Name of familymember <br /><span>Title</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact">
+        <div>
+          <h2 class="heading" data-sal="slide-left" data-sal-duration="500">Contact us</h2>
+          <p class="text" data-sal="slide-left" data-sal-duration="500">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in
+            porttitor mauris. Praesent volutpat sagittis ante, vel interdum
+            metus sollicitudin id. Sed pulvinar tellus nec lobortis euismod.
+            Nullam posuere consequat tellus, at posuere odio aliquet in
+          </p>
+        </div>
+      </section>
+      <section class="about" id="contact">
+        <div class="contentBx">
+          <div class="form" data-sal="slide-right" data-sal-duration="500">
+            <div class="inputBx">
+              <input type="text" name="" placeholder="Full Name" />
+            </div>
+            <div class="inputBx">
+              <input type="text" name="" placeholder="Email address" />
+            </div>
+            <div class="inputBx">
+              <input type="text" name="" placeholder="Phone number" />
+            </div>
+            <div class="inputBx">
+              <textarea placeholder="Write your message here..."></textarea>
+            </div>
+            <div class="inputBx">
+              <input type="submit" value="Send" name="" />
+            </div>
+          </div>
+        </div>
+        <div class="imgBx2" data-sal="slide-left" data-sal-duration="500"></div>
+      </section>
+
+      <!-- footer -->
+      <section class="footer">
+        <p class="text">Template made by Terje Haugum</p>
+        <ul>
+          <p class="text">Keep in touch on :</p>
+          <li>
+            <a href="#"> <img src="public/images/github.png" /></a>
+          </li>
+          <li>
+            <a href="#"> <img src="public/images/linkedin.png" /></a>
+          </li>
+          <li>
+            <a href="#"> <img src="public/images/facebook.png" /></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <script type="text/javascript" src="public/js/sal.js"></script>
+    <script type="text/javascript">
+
+      sal({
+        threshold: 1,
+        once: false,
+      });
+
+      function toggleClassName() {
+        var sidebar = document.querySelector(".sidebar");
+        var wrapper = document.querySelector(".wrapper");
+        var toggle = document.querySelector(".toggle");
+        sidebar.classList.toggle("active");
+        wrapper.classList.toggle("active");
+        toggle.classList.toggle("active");
+      }
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
