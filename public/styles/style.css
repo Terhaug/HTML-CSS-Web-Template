@@ -1,0 +1,406 @@
+/* Style used for example page */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background:rgb(168, 164, 164);
+    height: 1000px;
+    overflow-x: hidden;
+}
+.wrapper
+{
+    position: relative;
+    transition: 0.5s;
+    left: 0px;
+}
+.wrapper.active
+{
+    left: -400px
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    transition: 0.5s;
+}
+header.sticky
+{
+    padding: 20px 100px;
+    background: rgb(118, 144, 153);
+}
+header .logo
+{
+    color:white;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+header .toggle
+{
+    position: relative;
+    width: 36px;
+    height: 28px;
+    background: url(../images/menu-toggle.png);
+    background-size: cover;
+    cursor: pointer;
+}
+header .toggle.active
+{
+    background: url(../images/close.png);
+    background-size: cover;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+.banner img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+.banner .content
+{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+.banner .content h2
+{
+    font-size: 60px;
+    color:white;
+}
+
+.banner .content p
+{
+    font-size: 18px;
+    color:white;
+}
+.sidebar
+{
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: rgb(118, 144, 153);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: 0.5s;
+}
+.sidebar.active
+{
+    right:0;
+}
+.sidebar ul
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar ul li
+{
+    list-style: none;
+    margin: 5px 0;
+}
+.sidebar ul li a
+{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.sidebar ul li a:hover
+{
+    color:gray
+}
+.about
+{
+    position: relative;
+    width: 100%;
+    background: rgb(118, 144, 153);
+    display: flex;
+}
+.about .contentBx
+{
+    background: rgb(118, 144, 153);
+    padding: 100px;
+    width: 50%;
+}
+.heading
+{
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.text 
+{
+    position: relative;
+    color:white;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.about .imgBx
+{
+    position: relative;
+    width: 50%;
+    background-image: url(../images/window.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.50;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.family
+{
+    position: relative;
+    padding: 0 100px 100px;
+    text-align: center;
+}
+.family .container
+{
+    margin-top: 30px;
+}
+.family .familyBx
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+.family .familyBx .box
+{
+    margin: 0 10px;
+    width: 260px;
+    padding: 5px;
+    background: white;
+}
+.family .familyBx .box .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.family .familyBx .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.family .familyBx .box .content
+{
+    padding: 15px 0;
+}
+.family .familyBx .box .content h2
+{
+    position: relative;
+    font-size: 18px;
+    line-height: 1.2em;
+}
+.family .familyBx .box .content h2 span
+{
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contact
+{
+    position: relative;
+    padding: 100px;
+    text-align: center;
+    background: rgb(118, 144, 153);
+}
+.about .imgBx2
+{
+    position: relative;
+    width: 50%;
+    background-image: url(../images/playground.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.50;
+}
+.form
+{
+    position: relative;
+}
+.form .inputBx
+{
+    margin-bottom: 40px;
+}
+.form .inputBx input
+{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.form .inputBx input::placeholder
+{
+    color: white;
+}
+.form .inputBx textarea
+{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    min-height: 150px;
+    border-bottom: 2px solid white;
+}
+.form .inputBx textarea::placeholder
+{
+    color: white;
+}
+.form .inputBx input[type="submit"]
+{
+    width: 150px;
+    background: white;
+    color:black;
+    cursor: pointer;
+    font-weight: 400;
+}
+.footer
+{
+    position: relative;
+    background: rgb(168, 164, 164);
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li
+{
+    list-style: none;
+}
+.footer ul li a
+{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.footer ul li a img
+{
+    max-width: 40px;
+    filter: invert(1);
+}
+
+/* Making responsive */
+@media (max-width: 991px)
+{
+    header, header.sticky 
+    {
+        padding: 20px 50px;
+    }
+    .sidebar ul li a
+    {
+        font-size: 24px;
+    }
+    .banner
+    {
+        padding: 50px;
+    }
+    .banner .content h2
+    {
+        font-size: 36px;
+    }
+    .banner .content p
+    {
+        font-size: 16px;
+    }
+    .about
+    {
+        flex-direction: column;
+    }
+    .about .contentBx
+    {
+        padding: 50px;
+        width: 100%;
+    }
+    .about .imgBx
+    {
+        min-height: 400px;
+        width: 100%;
+    }
+    .family
+    {
+        padding: 0 50px 50px;
+    }
+    .contact
+    {
+        padding: 50px;
+    }
+    .footer
+    {
+        flex-direction: column;
+        padding: 20px 50px;
+        justify-content: center;
+    }
+    .footer p
+    {
+        text-align: center;
+    }
+    .footer ul
+    {
+        margin-top: 20px;
+    }
+}
